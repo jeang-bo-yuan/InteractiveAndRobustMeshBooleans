@@ -121,6 +121,8 @@ if(CMAKE_CXX_COMPILER_ID STREQUAL "MSVC")
         target_link_options(${PROJECT_NAME} PUBLIC "/STACK:8421376")
         # turn off annoying warnings
         target_compile_options(${PROJECT_NAME} PUBLIC "/D _CRT_SECURE_NO_WARNINGS")
+
+        add_compile_options("/utf-8")
 else()
         # set standard optimization level
         target_compile_options(${PROJECT_NAME} PUBLIC -O2)

@@ -20,3 +20,5 @@ xcode/
 *.a
 
 *.pro.user
+
+.vs/
